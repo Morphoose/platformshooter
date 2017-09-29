@@ -7,6 +7,13 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprites name="alien">
+      <sprite>sprites\spr_alien_stehen</sprite>
+      <sprite>sprites\spr_alien_start_rechts</sprite>
+      <sprite>sprites\spr_alien_rechts</sprite>
+      <sprite>sprites\spr_alien_links</sprite>
+      <sprite>sprites\spr_alien_start_links</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
