@@ -48,8 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white);
-draw_text(obj_player.x-50,obj_player.y-50,global.leben);
+            <string>draw_set_color(c_red);
+
+draw_text(view_xview[0]+32, view_yview[0]+16,global.leben);
 </string>
           </argument>
         </arguments>

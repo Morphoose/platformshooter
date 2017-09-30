@@ -157,8 +157,8 @@ else
 image_speed = phy_speed_x / 10;
 }
 
-background_x[0] = -phy_position_x /7;
-background_y[0] = -phy_position_y /7;
+background_x[0] = -phy_position_x / 8;
+background_y[0] = -phy_position_y / 8;
 </string>
           </argument>
         </arguments>
