@@ -15,8 +15,6 @@
       <sprite>sprites\spr_alien_links</sprite>
     </sprites>
     <sprites name="character">
-      <sprite>sprites\spr_Charakter_Links_Gehen</sprite>
-      <sprite>sprites\spr_Charakter_Links</sprite>
       <sprite>sprites\spr_Charakter_Rechts_Gehen</sprite>
       <sprite>sprites\spr_Charakter_Rechts</sprite>
       <sprite>sprites\spr_Charakter_stand</sprite>
@@ -47,6 +45,7 @@
       <object>objects\obj_boden</object>
     </objects>
     <objects name="character">
+      <object>objects\obj_alien_1</object>
       <object>objects\obj_player</object>
     </objects>
   </objects>
