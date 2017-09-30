@@ -41,6 +41,7 @@
       <sprite>sprites\spr_rampelinks</sprite>
     </sprites>
     <sprite>sprites\spr_flag</sprite>
+    <sprite>sprites\spr_arrow_menu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_boden</background>
@@ -66,8 +67,12 @@
     <background>background\bg_new</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_game_over</font>
+    <font>fonts\fnt_menu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_alien_1</object>
@@ -79,8 +84,10 @@
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\object8</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_lvl_2</room>
     <room>rooms\rm_lvl_3</room>
