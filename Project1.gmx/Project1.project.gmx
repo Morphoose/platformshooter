@@ -42,35 +42,14 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_background1</background>
-    <background>background\bg_boden</background>
-    <background>background\bg_rampelinks</background>
-    <background>background\bg_ramperechts</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\fnt_game_over</font>
-  </fonts>
-  <objects name="objects">
-    <objects name="system">
-      <object>objects\obj_collisionrampe</object>
-      <object>objects\obj_collision</object>
-      <object>objects\obj_wall</object>
-    </objects>
-    <objects name="welt">
-      <object>objects\obj_flag</object>
-    </objects>
-    <objects name="character">
-      <object>objects\obj_alien_1</object>
-      <object>objects\obj_player</object>
-    </objects>
-    <objects name="screens">
-      <object>objects\obj_game_over</object>
-    </objects>
-  </objects>
+  <fonts name="fonts"/>
+  <objects name="objects"/>
   <rooms name="rooms">
-    <room>rooms\room_level_1</room>
-    <room>rooms\room_level_2</room>
-    <room>rooms\testlevel</room>
+    <room>rooms\room_level_1_new</room>
+    <room>rooms\room_level_2_new</room>
+    <room>rooms\testlevel_new</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
