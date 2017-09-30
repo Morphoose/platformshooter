@@ -51,7 +51,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\room_level_1</room>
+    <room>rooms\room_level_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
