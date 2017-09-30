@@ -6,16 +6,29 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_collision</sprite>
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_rampelinks</sprite>
-    <sprite>sprites\sprite4</sprite>
     <sprites name="alien">
       <sprite>sprites\spr_alien_stehen</sprite>
       <sprite>sprites\spr_alien_start_rechts</sprite>
       <sprite>sprites\spr_alien_start_links</sprite>
       <sprite>sprites\spr_alien_rechts</sprite>
       <sprite>sprites\spr_alien_links</sprite>
+    </sprites>
+    <sprites name="character">
+      <sprite>sprites\spr_Charakter_Links_Gehen</sprite>
+      <sprite>sprites\spr_Charakter_Links</sprite>
+      <sprite>sprites\spr_Charakter_Rechts_Gehen</sprite>
+      <sprite>sprites\spr_Charakter_Rechts</sprite>
+      <sprite>sprites\spr_Charakter_stand</sprite>
+    </sprites>
+    <sprites name="waffe1">
+      <sprite>sprites\spr_Waffe1_links</sprite>
+      <sprite>sprites\spr_Waffe1_rechts</sprite>
+    </sprites>
+    <sprites name="system">
+      <sprite>sprites\spr_collision</sprite>
+      <sprite>sprites\spr_ramperechts</sprite>
+      <sprite>sprites\spr_rampelinks</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -26,12 +39,14 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_boden</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_collision</object>
-    <object>objects\obj_collisionrampelinks</object>
-    <object>objects\alien1</object>
-    <object>objects\object5</object>
+    <objects name="system">
+      <object>objects\obj_collisionrampe</object>
+      <object>objects\obj_collision</object>
+    </objects>
+    <objects name="welt">
+      <object>objects\obj_boden</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
