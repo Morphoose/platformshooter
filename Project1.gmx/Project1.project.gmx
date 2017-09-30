@@ -10,9 +10,23 @@
     <sprite>sprites\Charakter_Rechts</sprite>
     <sprite>sprites\Charakter_Links_Gehen</sprite>
     <sprite>sprites\Charakter_Rechts_Gehen</sprite>
+    <sprites name="Chrakter">
+      <sprite>sprites\Charakter_Links_new</sprite>
+      <sprite>sprites\Charakter_Links_Gehen_new</sprite>
+      <sprite>sprites\Charakter_Rechts_new</sprite>
+      <sprite>sprites\Charakter_Rechts_Gehen_new</sprite>
+    </sprites>
+    <sprite>sprites\Waffe1_rechts</sprite>
+    <sprite>sprites\Waffe1_links</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\Character</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
