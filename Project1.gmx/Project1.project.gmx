@@ -52,6 +52,7 @@
     <objects name="system">
       <object>objects\obj_collisionrampe</object>
       <object>objects\obj_collision</object>
+      <object>objects\obj_wall</object>
     </objects>
     <objects name="welt">
       <object>objects\obj_boden</object>

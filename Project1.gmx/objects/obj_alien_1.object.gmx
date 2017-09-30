@@ -285,7 +285,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>&lt;undefined&gt;</sprite>
+            <sprite>-1</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -355,7 +355,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>&lt;undefined&gt;</sprite>
+            <sprite>-1</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -407,7 +407,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>&lt;undefined&gt;</sprite>
+            <sprite>-1</sprite>
           </argument>
           <argument>
             <kind>0</kind>
