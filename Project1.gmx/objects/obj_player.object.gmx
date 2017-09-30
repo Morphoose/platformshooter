@@ -30,10 +30,10 @@ start_y = y;
 
 phy_fixed_rotation = true;
 
-move_speed = 200;
-max_xspeed = 2;
+move_speed = 300;
+max_xspeed = 3;
 jumping = false;
-jump_force = -40;
+jump_force = -30;
 
 </string>
           </argument>

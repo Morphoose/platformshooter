@@ -85,9 +85,6 @@
     <instance objName="obj_collision" x="928" y="736" name="inst_E84FFA31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision" x="960" y="736" name="inst_17D14C4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="704" y="704" name="inst_C856001B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="704" y="672" name="inst_F642F02C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="704" y="640" name="inst_F05F0723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="704" y="608" name="inst_8B28D89B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="704" y="576" name="inst_B44B2680" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="736" name="inst_77449664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="704" name="inst_EE50541B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -186,7 +183,15 @@
     <instance objName="obj_collision" x="320" y="704" name="inst_AA0FFBFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision" x="352" y="704" name="inst_999BF461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="64" y="480" name="inst_B8CF8288" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="obj_lives" x="192" y="448" name="inst_982FA5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_collision" x="224" y="512" name="inst_2FCA85E6" locked="0" code="" scaleX="1" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="224" y="544" name="inst_48981880" locked="0" code="" scaleX="1" scaleY="-0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision" x="704" y="608" name="inst_1A300A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision" x="704" y="640" name="inst_B56C9040" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision" x="704" y="672" name="inst_8F31EA4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> 66b61cff5156b74eff5f0afb1c136d2f326cc0cd
   </instances>
   <tiles>
     <tile bgName="bg_boden" x="32" y="512" w="32" h="32" xo="0" yo="0" id="10000666" name="inst_018CE4B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -338,6 +343,6 @@
   <PhysicsWorldRight>1024</PhysicsWorldRight>
   <PhysicsWorldBottom>768</PhysicsWorldBottom>
   <PhysicsWorldGravityX>0</PhysicsWorldGravityX>
-  <PhysicsWorldGravityY>60</PhysicsWorldGravityY>
+  <PhysicsWorldGravityY>30</PhysicsWorldGravityY>
   <PhysicsWorldPixToMeters>0.100000001490116</PhysicsWorldPixToMeters>
 </room>
