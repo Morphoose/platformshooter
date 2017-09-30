@@ -62,9 +62,13 @@ jump_force = -40;
 if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
 {
     sprite_index = spr_char_lauf;
+<<<<<<< HEAD
 }
 else
 {
+=======
+}else{
+>>>>>>> 2d8a2f3b012bbf07c37446b9d167bdcb94557cca
     sprite_index = spr_char_stand;
 }
 
@@ -163,8 +167,19 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>phy_position_x = start_x;
 phy_position_y = start_y;
+=======
+            <string>if(lives&gt;0)
+{
+    phy_position_x = start_x;
+    phy_position_y = start_y;
+    lives--;
+}else{
+    instance_create(0,0,obj_game_over);
+}
+>>>>>>> 2d8a2f3b012bbf07c37446b9d167bdcb94557cca
 </string>
           </argument>
         </arguments>
