@@ -162,6 +162,7 @@ physics_apply_force(x,y, -move_speed, -20);
             <kind>1</kind>
             <string>phy_position_x = start_x;
 phy_position_y = start_y;
+
 </string>
           </argument>
         </arguments>
