@@ -45,6 +45,9 @@
     <background>background\bg_ramperechts</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_game_over</font>
+  </fonts>
   <objects name="objects">
     <objects name="system">
       <object>objects\obj_collisionrampe</object>
@@ -56,6 +59,9 @@
     <objects name="character">
       <object>objects\obj_alien_1</object>
       <object>objects\obj_player</object>
+    </objects>
+    <objects name="screens">
+      <object>objects\obj_game_over</object>
     </objects>
   </objects>
   <rooms name="rooms">
