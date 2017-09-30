@@ -44,7 +44,11 @@
   <backgrounds name="background">
     <background>background\bg_boden</background>
     <background>background\bg_rampelinks</background>
+    <background>background\bg_stachel_runter</background>
+    <background>background\background8</background>
     <background>background\bg_ramperechts</background>
+    <background>background\bg_ramperunter_rechts</background>
+    <background>background\bg_ramperunter_links</background>
     <background>background\bg_background1</background>
   </backgrounds>
   <paths name="paths"/>
