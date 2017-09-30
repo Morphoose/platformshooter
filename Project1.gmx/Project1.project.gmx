@@ -51,6 +51,8 @@
     <background>background\bg_ramperunter_rechts</background>
     <background>background\bg_ramperunter_links</background>
     <background>background\bg_background1</background>
+    <background>background\bg_spritesheet</background>
+    <background>background\bg_new</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -65,9 +67,12 @@
     <object>objects\obj_lives</object>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
+    <object>objects\object8</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_level_1</room>
+    <room>rooms\rm_lvl_1</room>
+    <room>rooms\rm_lvl_2</room>
+    <room>rooms\rm_lvl_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
