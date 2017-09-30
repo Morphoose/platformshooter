@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+<<<<<<< HEAD
     <sprite>sprites\Charakter_Links</sprite>
     <sprite>sprites\Charakter_Rechts</sprite>
     <sprite>sprites\Charakter_Links_Gehen</sprite>
@@ -18,14 +19,44 @@
     </sprites>
     <sprite>sprites\Waffe1_rechts</sprite>
     <sprite>sprites\Waffe1_links</sprite>
+=======
+    <sprite>sprites\spr_collision</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_rampelinks</sprite>
+    <sprite>sprites\sprite4</sprite>
+    <sprites name="alien">
+      <sprite>sprites\spr_alien_links</sprite>
+      <sprite>sprites\spr_alien_start_links</sprite>
+      <sprite>sprites\spr_alien_rechts</sprite>
+      <sprite>sprites\spr_alien_stehen</sprite>
+      <sprite>sprites\spr_alien_start_rechts</sprite>
+      <sprite>sprites\spr_alien_pistol</sprite>
+    </sprites>
+>>>>>>> 3dc10f0f4843e21c63bdd3471b65e557f9670b6b
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_background1</background>
+    <background>background\bg_boden</background>
+    <background>background\bg_rampelinks</background>
+    <background>background\bg_ramperechts</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+<<<<<<< HEAD
     <object>objects\Character</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+=======
+    <object>objects\obj_boden</object>
+    <object>objects\obj_character</object>
+    <object>objects\obj_collision</object>
+    <object>objects\obj_collisionrampelinks</object>
+    <object>objects\obj_alien_1</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room1</room>
+>>>>>>> 3dc10f0f4843e21c63bdd3471b65e557f9670b6b
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
