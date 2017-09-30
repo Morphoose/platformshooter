@@ -34,9 +34,11 @@
     </sprites>
     <sprites name="system">
       <sprite>sprites\spr_collision</sprite>
+      <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_ramperechts</sprite>
       <sprite>sprites\spr_rampelinks</sprite>
     </sprites>
+    <sprite>sprites\spr_flag</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_background1</background>
@@ -55,7 +57,7 @@
       <object>objects\obj_wall</object>
     </objects>
     <objects name="welt">
-      <object>objects\obj_boden</object>
+      <object>objects\obj_flag</object>
     </objects>
     <objects name="character">
       <object>objects\obj_alien_1</object>
