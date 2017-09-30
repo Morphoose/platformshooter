@@ -9,6 +9,7 @@
     <sound>sound\snd_player_damage</sound>
     <sound>sound\snd_lvl_finish</sound>
     <sound>sound\snd_game_over</sound>
+    <sound>sound\snd_running_in_the_80s</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="waffe">
@@ -67,7 +68,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_level_1</room>
-    <room>rooms\room_level_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

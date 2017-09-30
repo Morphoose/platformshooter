@@ -91,8 +91,12 @@ if(phy_speed_y &lt; 0)
 {
     sprite_index = spr_char_sprung_hoch; 
 }
-if(phy_speed_y = 0)
+if(phy_speed_y = 0 || place_meeting(x,y+1, obj_collisionrampe))
 {
+if(place_meeting(x,y+1, obj_collisionrampe))
+{
+    image_speed = 50;
+}
 if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
 {
     sprite_index = spr_char_lauf;
@@ -315,9 +319,9 @@ if(jumping &amp;&amp; alarm[0] &lt; 0){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>1,1</point>
-    <point>10,1</point>
-    <point>10,17</point>
-    <point>1,17</point>
+    <point>0,0</point>
+    <point>11,0</point>
+    <point>11,18</point>
+    <point>0,18</point>
   </PhysicsShapePoints>
 </object>
