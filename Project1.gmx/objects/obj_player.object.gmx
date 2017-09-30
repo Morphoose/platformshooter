@@ -211,9 +211,15 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if(global.leben&gt;0){
 phy_position_x = start_x;
 phy_position_y = start_y;
+global.leben--;
+}else{
+view_visible[0]=false;
+view_visible[1]=true;
+instance_create(room_width/2,room_height/2,obj_game_over)
+}
 </string>
           </argument>
         </arguments>

@@ -63,6 +63,7 @@
     </objects>
     <objects name="screens">
       <object>objects\obj_game_over</object>
+      <object>objects\obj_lives</object>
     </objects>
   </objects>
   <rooms name="rooms">
