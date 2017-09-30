@@ -11,24 +11,22 @@
     <sound>sound\snd_game_over</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="waffe">
+      <sprite>sprites\spr_alien_waffe_rechts</sprite>
+      <sprite>sprites\spr_alien_waffe_links</sprite>
+      <sprite>sprites\spr_alien_waffe_rechts_schuss</sprite>
+      <sprite>sprites\spr_alien_waffe_links_schuss</sprite>
+    </sprites>
     <sprite>sprites\spr_player</sprite>
     <sprites name="alien">
-      <sprite>sprites\spr_alien_stehen</sprite>
-      <sprite>sprites\spr_alien_start_rechts</sprite>
-      <sprite>sprites\spr_alien_start_links</sprite>
-      <sprite>sprites\spr_alien_rechts</sprite>
-      <sprite>sprites\spr_alien_links</sprite>
-      <sprites name="waffe">
-        <sprite>sprites\spr_alien_waffe_rechts</sprite>
-        <sprite>sprites\spr_alien_waffe_links</sprite>
-        <sprite>sprites\spr_alien_waffe_rechts_schuss</sprite>
-        <sprite>sprites\spr_alien_waffe_links_schuss</sprite>
-      </sprites>
+      <sprite>sprites\spr_alien_lauf</sprite>
+      <sprite>sprites\sp_alien_stand</sprite>
     </sprites>
     <sprites name="character">
-      <sprite>sprites\spr_Charakter_Rechts_Gehen</sprite>
-      <sprite>sprites\spr_Charakter_Rechts</sprite>
-      <sprite>sprites\spr_Charakter_stand</sprite>
+      <sprite>sprites\spr_char_lauf</sprite>
+      <sprite>sprites\spr_char_sprung</sprite>
+      <sprite>sprites\spr_char_spritesheet</sprite>
+      <sprite>sprites\spr_char_stand</sprite>
     </sprites>
     <sprites name="waffe1">
       <sprite>sprites\spr_Waffe1_links</sprite>
@@ -63,6 +61,7 @@
   <rooms name="rooms">
     <room>rooms\room_level_1</room>
     <room>rooms\room_level_2</room>
+    <room>rooms\testlevel</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
