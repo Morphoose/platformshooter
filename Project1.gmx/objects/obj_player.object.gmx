@@ -62,13 +62,9 @@ jump_force = -40;
 if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
 {
     sprite_index = spr_char_lauf;
-<<<<<<< HEAD
 }
 else
 {
-=======
-}else{
->>>>>>> 2d8a2f3b012bbf07c37446b9d167bdcb94557cca
     sprite_index = spr_char_stand;
 }
 
@@ -79,7 +75,7 @@ image_speed = phy_speed_x / 10;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_collisionrampe">
+    <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -97,6 +93,30 @@ image_speed = phy_speed_x / 10;
           <argument>
             <kind>1</kind>
             <string>// iwas
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_collision">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//something
+
 </string>
           </argument>
         </arguments>
@@ -167,19 +187,8 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>phy_position_x = start_x;
 phy_position_y = start_y;
-=======
-            <string>if(lives&gt;0)
-{
-    phy_position_x = start_x;
-    phy_position_y = start_y;
-    lives--;
-}else{
-    instance_create(0,0,obj_game_over);
-}
->>>>>>> 2d8a2f3b012bbf07c37446b9d167bdcb94557cca
 </string>
           </argument>
         </arguments>
