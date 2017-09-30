@@ -13,6 +13,12 @@
       <sprite>sprites\spr_alien_start_links</sprite>
       <sprite>sprites\spr_alien_rechts</sprite>
       <sprite>sprites\spr_alien_links</sprite>
+      <sprites name="waffe">
+        <sprite>sprites\spr_alien_waffe_rechts</sprite>
+        <sprite>sprites\spr_alien_waffe_links</sprite>
+        <sprite>sprites\spr_alien_waffe_rechts_schuss</sprite>
+        <sprite>sprites\spr_alien_waffe_links_schuss</sprite>
+      </sprites>
     </sprites>
     <sprites name="character">
       <sprite>sprites\spr_Charakter_Rechts_Gehen</sprite>
