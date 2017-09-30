@@ -31,6 +31,7 @@
     <object>objects\obj_character</object>
     <object>objects\obj_collision</object>
     <object>objects\obj_collisionrampelinks</object>
+    <object>objects\obj_alien_1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
