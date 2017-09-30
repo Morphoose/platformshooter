@@ -39,13 +39,15 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <objects name="system">
       <object>objects\obj_collisionrampe</object>
       <object>objects\obj_collision</object>
     </objects>
     <objects name="welt">
       <object>objects\obj_boden</object>
+    </objects>
+    <objects name="character">
+      <object>objects\obj_player</object>
     </objects>
   </objects>
   <rooms name="rooms">
