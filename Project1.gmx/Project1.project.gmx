@@ -44,13 +44,24 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_boden</background>
-    <background>background\bg_rampelinks</background>
     <background>background\bg_stachel_runter</background>
-    <background>background\background8</background>
-    <background>background\bg_ramperechts</background>
+    <background>background\bg_stachel_hoch</background>
     <background>background\bg_ramperunter_rechts</background>
+    <background>background\bg_ramperechts</background>
+    <background>background\bg_rampelinks</background>
     <background>background\bg_ramperunter_links</background>
-    <background>background\bg_background1</background>
+    <backgrounds name="backgrounds">
+      <background>background\bg_background_mid</background>
+      <background>background\background13</background>
+      <background>background\bg_background_topleft</background>
+      <background>background\bg_background_topmid</background>
+      <background>background\bg_background_topright</background>
+      <background>background\bg_background_midleft</background>
+      <background>background\bg_background_midright</background>
+      <background>background\bg_background_bottomleft</background>
+      <background>background\bg_background_bottommid</background>
+      <background>background\bg_background_bottomright</background>
+    </backgrounds>
     <background>background\bg_spritesheet</background>
     <background>background\bg_new</background>
   </backgrounds>

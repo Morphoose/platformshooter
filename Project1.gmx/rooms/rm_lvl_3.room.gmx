@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_background_mid" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="400" hview="225" xport="0" yport="0" wport="1280" hport="720" hborder="480" vborder="300" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="500" hview="281" xport="0" yport="0" wport="1280" hport="720" hborder="500" vborder="350" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1280" hport="720" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -1094,32 +1094,6 @@
     <tile bgName="bg_boden" x="272" y="736" w="16" h="16" xo="0" yo="0" id="10002352" name="inst_C31C3734" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_boden" x="416" y="736" w="16" h="16" xo="0" yo="0" id="10002353" name="inst_A086DB6C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_boden" x="464" y="752" w="16" h="16" xo="0" yo="0" id="10002354" name="inst_D5C94662" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="480" y="640" w="16" h="16" xo="0" yo="0" id="10002355" name="inst_C6B8ECE9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="496" y="624" w="16" h="16" xo="0" yo="0" id="10002356" name="inst_15A4C2D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="512" y="608" w="16" h="16" xo="0" yo="0" id="10002357" name="inst_30E427EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="528" y="592" w="16" h="16" xo="0" yo="0" id="10002358" name="inst_0DE388B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="544" y="576" w="16" h="16" xo="0" yo="0" id="10002359" name="inst_BEFCFB1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="880" y="560" w="16" h="16" xo="0" yo="0" id="10002360" name="inst_3274B1B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="896" y="544" w="16" h="16" xo="0" yo="0" id="10002361" name="inst_055B8436" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="912" y="528" w="16" h="16" xo="0" yo="0" id="10002362" name="inst_0C4B2C60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="928" y="512" w="16" h="16" xo="0" yo="0" id="10002363" name="inst_D7E234CA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="864" y="576" w="16" h="16" xo="0" yo="0" id="10002364" name="inst_E669E354" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="944" y="496" w="16" h="16" xo="0" yo="0" id="10002365" name="inst_EED6EF4B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="960" y="480" w="16" h="16" xo="0" yo="0" id="10002366" name="inst_FA0DE20A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="976" y="464" w="16" h="16" xo="0" yo="0" id="10002367" name="inst_C92F65A7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="992" y="448" w="16" h="16" xo="0" yo="0" id="10002368" name="inst_C75575F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="624" y="576" w="16" h="16" xo="0" yo="0" id="10002369" name="inst_2A197A32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="656" y="608" w="16" h="16" xo="0" yo="0" id="10002370" name="inst_CC09BFCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="640" y="592" w="16" h="16" xo="0" yo="0" id="10002371" name="inst_F359682D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="672" y="624" w="16" h="16" xo="0" yo="0" id="10002372" name="inst_3D828057" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="688" y="640" w="16" h="16" xo="0" yo="0" id="10002373" name="inst_43161743" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="704" y="656" w="16" h="16" xo="0" yo="0" id="10002374" name="inst_0EA0BFC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="704" y="240" w="16" h="16" xo="0" yo="0" id="10002375" name="inst_816DF0B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="688" y="224" w="16" h="16" xo="0" yo="0" id="10002376" name="inst_801696DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="672" y="208" w="16" h="16" xo="0" yo="0" id="10002377" name="inst_D05EAB85" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="656" y="192" w="16" h="16" xo="0" yo="0" id="10002378" name="inst_26CCA741" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="640" y="176" w="16" h="16" xo="0" yo="0" id="10002379" name="inst_4C463174" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_ramperechts" x="624" y="160" w="16" h="16" xo="0" yo="0" id="10002380" name="inst_D402C1E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_boden" x="688" y="256" w="16" h="16" xo="0" yo="0" id="10002381" name="inst_A1CAE492" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="288" y="400" w="16" h="16" xo="0" yo="0" id="10002383" name="inst_C0CE2C41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="304" y="416" w="16" h="16" xo="0" yo="0" id="10002384" name="inst_53EAAA41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1129,17 +1103,43 @@
     <tile bgName="bg_ramperunter_rechts" x="368" y="416" w="16" h="16" xo="0" yo="0" id="10002388" name="inst_C4679B1E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_rechts" x="384" y="400" w="16" h="16" xo="0" yo="0" id="10002389" name="inst_93E78C0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_rechts" x="400" y="384" w="16" h="16" xo="0" yo="0" id="10002390" name="inst_FFCAC80B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background8" x="336" y="448" w="16" h="16" xo="0" yo="0" id="10002391" name="inst_5AF9D7DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_stachel_hoch" x="336" y="448" w="16" h="16" xo="0" yo="0" id="10002391" name="inst_5AF9D7DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="592" y="176" w="16" h="16" xo="0" yo="0" id="10002392" name="inst_965300BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="608" y="192" w="16" h="16" xo="0" yo="0" id="10002393" name="inst_E77ABA63" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="624" y="208" w="16" h="16" xo="0" yo="0" id="10002394" name="inst_F6B66F61" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="640" y="224" w="16" h="16" xo="0" yo="0" id="10002395" name="inst_26ACC1F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="656" y="240" w="16" h="16" xo="0" yo="0" id="10002396" name="inst_72988911" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_links" x="672" y="256" w="16" h="16" xo="0" yo="0" id="10002397" name="inst_4E32B929" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_rampelinks" x="592" y="160" w="16" h="16" xo="0" yo="0" id="10002398" name="inst_9469B77C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_ramperunter_rechts" x="704" y="256" w="16" h="16" xo="0" yo="0" id="10002399" name="inst_BC9082A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stachel_runter" x="608" y="144" w="16" h="16" xo="0" yo="0" id="10002400" name="inst_814F19EB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background8" x="688" y="272" w="16" h="16" xo="0" yo="0" id="10002401" name="inst_97EA9A6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_stachel_hoch" x="688" y="272" w="16" h="16" xo="0" yo="0" id="10002401" name="inst_97EA9A6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="624" y="160" w="16" h="16" xo="0" yo="0" id="10003198" name="inst_A0674E59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="640" y="176" w="16" h="16" xo="0" yo="0" id="10003199" name="inst_C90E9B8F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="656" y="192" w="16" h="16" xo="0" yo="0" id="10003200" name="inst_C300B21E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="672" y="208" w="16" h="16" xo="0" yo="0" id="10003201" name="inst_B49DC220" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="704" y="240" w="16" h="16" xo="0" yo="0" id="10003202" name="inst_78F22FF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="688" y="224" w="16" h="16" xo="0" yo="0" id="10003203" name="inst_E2776098" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="592" y="160" w="16" h="16" xo="0" yo="0" id="10003204" name="inst_2DF9C62C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="480" y="640" w="16" h="16" xo="0" yo="0" id="10003205" name="inst_1A938183" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="512" y="608" w="16" h="16" xo="0" yo="0" id="10003206" name="inst_9675C407" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="496" y="624" w="16" h="16" xo="0" yo="0" id="10003207" name="inst_38825850" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="528" y="592" w="16" h="16" xo="0" yo="0" id="10003208" name="inst_DC3EAD5C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="544" y="576" w="16" h="16" xo="0" yo="0" id="10003209" name="inst_FB23D511" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="864" y="576" w="16" h="16" xo="0" yo="0" id="10003210" name="inst_4F233226" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="880" y="560" w="16" h="16" xo="0" yo="0" id="10003211" name="inst_24E5EBCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="896" y="544" w="16" h="16" xo="0" yo="0" id="10003212" name="inst_B1081E19" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="912" y="528" w="16" h="16" xo="0" yo="0" id="10003213" name="inst_69998AF4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="928" y="512" w="16" h="16" xo="0" yo="0" id="10003214" name="inst_AD214AF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="944" y="496" w="16" h="16" xo="0" yo="0" id="10003215" name="inst_EFBBF325" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="960" y="480" w="16" h="16" xo="0" yo="0" id="10003216" name="inst_2412CBEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="976" y="464" w="16" h="16" xo="0" yo="0" id="10003217" name="inst_78493E7C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_rampelinks" x="992" y="448" w="16" h="16" xo="0" yo="0" id="10003218" name="inst_88E1BE51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="624" y="576" w="16" h="16" xo="0" yo="0" id="10003219" name="inst_86632FF8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="640" y="592" w="16" h="16" xo="0" yo="0" id="10003220" name="inst_2826A453" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="656" y="608" w="16" h="16" xo="0" yo="0" id="10003221" name="inst_16A8EE18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="672" y="624" w="16" h="16" xo="0" yo="0" id="10003222" name="inst_55DF5E58" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="688" y="640" w="16" h="16" xo="0" yo="0" id="10003223" name="inst_030F2614" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ramperechts" x="704" y="656" w="16" h="16" xo="0" yo="0" id="10003224" name="inst_99B790C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

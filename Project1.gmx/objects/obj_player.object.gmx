@@ -156,6 +156,9 @@ else
 
 image_speed = phy_speed_x / 10;
 }
+
+background_x[0] = -phy_position_x /7;
+background_y[0] = -phy_position_y /7;
 </string>
           </argument>
         </arguments>
@@ -307,7 +310,7 @@ audio_play_sound(snd_game_over,100,false);
           <argument>
             <kind>1</kind>
             <string>///first jump
-if(place_meeting(x, y,obj_collision))
+if(place_meeting(x, y+1,obj_collision))
 {   
         if(!place_meeting(x,y-2, obj_wall))
         jumping = true;
