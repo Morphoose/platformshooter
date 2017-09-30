@@ -233,7 +233,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_alien_start_links</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
