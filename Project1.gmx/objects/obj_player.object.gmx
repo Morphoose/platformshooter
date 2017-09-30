@@ -85,9 +85,9 @@ jump_force = -100;
 
 if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
 {
-    sprite_index = spr_Charakter_Rechts_Gehen;
+    sprite_index = spr_char_lauf;
 }else{
-    sprite_index = spr_Charakter_stand;
+    sprite_index = spr_char_stand;
 }
 
 image_speed = phy_speed_x / 10;
@@ -184,9 +184,14 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phy_position_x = start_x;
-phy_position_y = start_y;
-
+            <string>if(lives&gt;0)
+{
+    phy_position_x = start_x;
+    phy_position_y = start_y;
+    lives--;
+}else{
+    instance_create(0,0,obj_game_over);
+}
 </string>
           </argument>
         </arguments>
