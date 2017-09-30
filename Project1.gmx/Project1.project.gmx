@@ -24,7 +24,8 @@
     </sprites>
     <sprites name="character">
       <sprite>sprites\spr_char_lauf</sprite>
-      <sprite>sprites\spr_char_sprung</sprite>
+      <sprite>sprites\spr_char_sprung_hoch</sprite>
+      <sprite>sprites\spr_char_sprung_runter</sprite>
       <sprite>sprites\spr_char_spritesheet</sprite>
       <sprite>sprites\spr_char_stand</sprite>
     </sprites>
@@ -47,9 +48,11 @@
     <background>background\bg_background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_game_over</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_alien_1</object>
-    <object>objects\obj_boden</object>
     <object>objects\obj_collision</object>
     <object>objects\obj_collisionrampe</object>
     <object>objects\obj_flag</object>

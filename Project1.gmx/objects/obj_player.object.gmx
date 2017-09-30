@@ -83,6 +83,16 @@ jump_force = -30;
             <kind>1</kind>
             <string>phy_speed_x = max(min(phy_speed_x, max_xspeed),-max_xspeed);
 
+if(phy_speed_y &gt; 0)
+{
+    sprite_index = spr_char_sprung_runter; 
+}
+if(phy_speed_y &lt; 0)
+{
+    sprite_index = spr_char_sprung_hoch; 
+}
+if(phy_speed_y = 0)
+{
 if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
 {
     sprite_index = spr_char_lauf;
@@ -93,7 +103,7 @@ else
 }
 
 image_speed = phy_speed_x / 10;
-
+}
 </string>
           </argument>
         </arguments>
@@ -215,10 +225,12 @@ physics_apply_force(x,y, -move_speed, -20);
 phy_position_x = start_x;
 phy_position_y = start_y;
 global.leben--;
+audio_play_sound(snd_player_damage,100,false);
 }else{
 view_visible[0]=false;
 view_visible[1]=true;
 instance_create(room_width/2,room_height/2,obj_game_over)
+audio_play_sound(snd_game_over,100,false);
 }
 </string>
           </argument>
