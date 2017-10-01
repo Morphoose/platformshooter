@@ -34,7 +34,7 @@ move_speed = 300;
 max_xspeed = 3.5;
 jumping = false;
 jump_force = -45;
-
+doppelsprung = 0;
 </string>
           </argument>
         </arguments>
@@ -57,7 +57,31 @@ jump_force = -45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>/// game end timer
+game_end();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// fallof timer
 </string>
           </argument>
         </arguments>
@@ -155,7 +179,40 @@ image_speed = phy_speed_x / 10;
 }
 }
 
+if(place_meeting(x, y+1,obj_collision ) || place_meeting(x,y+1,obj_collisionrampe))
+{
+    stampfer =1
+}
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// falloftimer set
+
+if(place_meeting(x,y+1, obj_collision) || place_meeting(x,y+1, obj_collisionrampe))
+{ 
+    jumping = true;
+    doppelsprung = 1
+    alarm[0]= 1;
+}
 </string>
           </argument>
         </arguments>
@@ -224,29 +281,6 @@ alarm[3] =3*room_speed ;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// iwas
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_collision">
       <action>
         <libid>1</libid>
@@ -266,6 +300,29 @@ alarm[3] =3*room_speed ;
             <kind>1</kind>
             <string>//something
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// iwas
 </string>
           </argument>
         </arguments>
@@ -336,10 +393,11 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!place_meeting(x, y+1,obj_collision ) &amp;&amp; !place_meeting(x,y+1,obj_collisionrampe))
+            <string>if(!place_meeting(x, y+1,obj_collision ) &amp;&amp; !place_meeting(x,y+1,obj_collisionrampe) &amp;&amp; stampfer = 1)
 {   
         physics_apply_impulse(x,y,0, 60);
-        show_debug_message("land");  
+        show_debug_message("land"); 
+        stampfer = 0; 
 }  
         
     
@@ -374,6 +432,8 @@ if(place_meeting(x, y+1,obj_collision))
         alarm[0] = 1;
         physics_apply_impulse(x,y,0, jump_force);
         show_debug_message("first Jump");
+        show_debug_message(stampfer); 
+        doppelsprung=1;
     
 }
 
@@ -399,11 +459,12 @@ if(place_meeting(x, y+1,obj_collision))
             <kind>1</kind>
             <string>/// second jump
 
-if(jumping &amp;&amp; alarm[0] &lt; 0){
+if(jumping &amp;&amp; alarm[0] &lt; 0 &amp;&amp; doppelsprung==1) {
     
     
     physics_apply_impulse(x,y,0, jump_force);
     jumping = false;
+    doppelsprung=0;
     show_debug_message("double Jump");
     
 }
