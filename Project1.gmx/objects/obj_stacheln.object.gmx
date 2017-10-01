@@ -22,7 +22,7 @@
   <PhysicsShapePoints>
     <point>4,9</point>
     <point>12,9</point>
-    <point>16,16</point>
-    <point>0,16</point>
+    <point>14,16</point>
+    <point>2,16</point>
   </PhysicsShapePoints>
 </object>

@@ -33,7 +33,7 @@ phy_fixed_rotation = true;
 move_speed = 300;
 max_xspeed = 3.5;
 jumping = false;
-jump_force = -45;
+jump_force = -40;
 doppelsprung = 0;
 </string>
           </argument>
