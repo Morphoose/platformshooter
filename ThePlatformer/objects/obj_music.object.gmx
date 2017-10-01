@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_running_in_the_80s,50,true);
+            <string>if(!audio_is_playing(snd_running_in_the_80s)){
+audio_play_sound(snd_running_in_the_80s,50,true);
+}
 </string>
           </argument>
         </arguments>
