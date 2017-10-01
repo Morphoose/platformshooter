@@ -27,8 +27,7 @@
             <kind>1</kind>
             <string>menu[0] = "Start";
 menu[1] = "Level auswählen";
-menu[2] = "Credits";
-menu[3] = "Beenden";
+menu[2] = "Beenden";
 
 space = 64;
 mpos = 0;

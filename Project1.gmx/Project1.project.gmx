@@ -9,6 +9,7 @@
     <sound>sound\snd_lvl_finish</sound>
     <sound>sound\snd_game_over</sound>
     <sound>sound\snd_running_in_the_80s</sound>
+    <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="character">

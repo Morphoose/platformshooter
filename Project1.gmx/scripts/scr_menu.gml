@@ -14,11 +14,7 @@ switch(mpos)
     
     case 2:
     {
+        game_end();
         break;
-    }
-    
-    case 3:
-    {
-        game_end(); break;
     }
 }

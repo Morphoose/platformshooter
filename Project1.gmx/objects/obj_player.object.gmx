@@ -248,7 +248,7 @@ instance_deactivate_object(obj_lives);
 instance_deactivate_object(obj_player);
 instance_create(room_width/2,room_height/2,obj_game_over)
 if(!audio_is_playing(snd_game_over)){
-audio_play_sound(snd_game_over,100,false);
+audio_play_sound(snd_game_over,70,false);
 }
 }
 
@@ -433,6 +433,7 @@ if(place_meeting(x, y+1,obj_collision))
         jumping = true;
         alarm[0] = 1;
         physics_apply_impulse(x,y,0, jump_force);
+        audio_play_sound(snd_jump,70, false);
         show_debug_message("first Jump");
         show_debug_message(stampfer); 
         doppelsprung=1;
@@ -465,6 +466,7 @@ if(jumping &amp;&amp; alarm[0] &lt; 0 &amp;&amp; doppelsprung==1) {
     
     
     physics_apply_impulse(x,y,0, jump_force);
+    audio_play_sound(snd_jump,70, false);
     jumping = false;
     doppelsprung=0;
     show_debug_message("double Jump");
