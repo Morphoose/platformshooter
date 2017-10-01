@@ -18,6 +18,7 @@
       <sprite>sprites\spr_char_sprung_runter</sprite>
       <sprite>sprites\spr_char_spritesheet</sprite>
       <sprite>sprites\spr_char_stand</sprite>
+      <sprite>sprites\spr_char_death</sprite>
     </sprites>
     <sprites name="system">
       <sprite>sprites\spr_collision</sprite>
