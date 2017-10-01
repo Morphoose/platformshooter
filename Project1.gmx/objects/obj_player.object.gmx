@@ -31,35 +31,34 @@ start_y = y;
 phy_fixed_rotation = true;
 
 move_speed = 300;
-max_xspeed = 3;
+max_xspeed = 3.5;
 jumping = false;
-jump_force = -30;
+jump_force = -45;
 
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>snd_running_in_the_80s</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>game_end();
+</string>
           </argument>
         </arguments>
       </action>
@@ -131,34 +130,95 @@ jump_force = -30;
             <kind>1</kind>
             <string>phy_speed_x = max(min(phy_speed_x, max_xspeed),-max_xspeed);
 
-if(phy_speed_y &gt; 0)
+if(phy_speed_y &gt; 0.2)
 {
     sprite_index = spr_char_sprung_runter; 
 }
-if(phy_speed_y &lt; 0)
+if(phy_speed_y &lt; -0.2)
 {
     sprite_index = spr_char_sprung_hoch; 
 }
-if(phy_speed_y = 0 || place_meeting(x,y+1, obj_collisionrampe))
+else{
+if( 0.2 &gt;phy_speed_y &gt; -0.2)
 {
-if(place_meeting(x,y+1, obj_collisionrampe))
-{
-    image_speed = 50;
-}
-if(phy_speed_x &gt; 0.1 || phy_speed_x &lt; -0.1)
+if(phy_speed_x &gt; 0.3 || phy_speed_x &lt; -0.3)
 {
     sprite_index = spr_char_lauf;
 }
-else
+else{
+if( 0.3 &gt; phy_speed_x &gt; -0.3)
 {
     sprite_index = spr_char_stand;
 }
-
+}
 image_speed = phy_speed_x / 10;
 }
+}
 
-background_x[0] = -phy_position_x / 8;
-background_y[0] = -phy_position_y / 8;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_stacheln">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.leben&gt;0){
+phy_position_x = start_x;
+phy_position_y = start_y;
+global.leben--;
+audio_play_sound(snd_player_damage,100,false);
+}else{
+global.leben=0;
+view_visible[0]=false;
+view_visible[1]=true;
+instance_create(room_width/2,room_height/2,obj_game_over)
+if !audio_is_playing(snd_game_over){
+audio_play_sound(snd_game_over,100,false);
+}
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if(global.leben =0 )
+{
+alarm[3] =3*room_speed ;
+}
 </string>
           </argument>
         </arguments>
@@ -259,7 +319,7 @@ physics_apply_force(x,y, -move_speed, -20);
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="0">
+    <event eventtype="9" enumb="83">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -276,17 +336,14 @@ physics_apply_force(x,y, -move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.leben&gt;0){
-phy_position_x = start_x;
-phy_position_y = start_y;
-global.leben--;
-audio_play_sound(snd_player_damage,100,false);
-}else{
-view_visible[0]=false;
-view_visible[1]=true;
-instance_create(room_width/2,room_height/2,obj_game_over)
-audio_play_sound(snd_game_over,100,false);
-}
+            <string>if(!place_meeting(x, y+1,obj_collision ) &amp;&amp; !place_meeting(x,y+1,obj_collisionrampe))
+{   
+        physics_apply_impulse(x,y,0, 60);
+        show_debug_message("land");  
+}  
+        
+    
+
 </string>
           </argument>
         </arguments>
@@ -361,7 +418,7 @@ if(jumping &amp;&amp; alarm[0] &lt; 0){
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
-  <PhysicsObjectDensity>1</PhysicsObjectDensity>
+  <PhysicsObjectDensity>1.29999995231628</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>1</PhysicsObjectLinearDamping>
@@ -370,9 +427,9 @@ if(jumping &amp;&amp; alarm[0] &lt; 0){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>11,0</point>
-    <point>11,18</point>
-    <point>0,18</point>
+    <point>1,0</point>
+    <point>10,0</point>
+    <point>10,17</point>
+    <point>1,17</point>
   </PhysicsShapePoints>
 </object>
