@@ -1,4 +1,4 @@
-switch(mpos)
+switch(lspos)
 {
     case 0:
     {
@@ -8,17 +8,19 @@ switch(mpos)
     
     case 1:
     {
-        room_goto(rm_level_select);
+        room_goto(rm_lvl_2);
         break;
     }
     
     case 2:
     {
+        room_goto(rm_lvl_3);
         break;
     }
     
     case 3:
     {
-        game_end(); break;
+        room_goto(rm_menu);
+        break;
     }
 }

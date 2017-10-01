@@ -46,6 +46,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_level_select.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_game_over</font>
@@ -65,15 +66,17 @@
         <object>objects\obj_collisionstachel</object>
         <object>objects\obj_collisionrampe</object>
       </objects>
+      <object>objects\obj_level_select</object>
       <object>objects\obj_heart</object>
     </objects>
     <object>objects\obj_stacheln</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_lvl_3</room>
+    <room>rooms\rm_level_select</room>
     <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_lvl_2</room>
+    <room>rooms\rm_lvl_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

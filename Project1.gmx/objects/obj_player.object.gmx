@@ -58,7 +58,7 @@ doppelsprung = 0;
           <argument>
             <kind>1</kind>
             <string>/// game end timer
-game_end();
+room_goto(rm_menu);
 </string>
           </argument>
         </arguments>
@@ -241,11 +241,13 @@ phy_position_y = start_y;
 global.leben--;
 audio_play_sound(snd_player_damage,100,false);
 }else{
-global.leben=0;
+global.leben=-1;
 view_visible[0]=false;
 view_visible[1]=true;
+instance_deactivate_object(obj_lives);
+instance_deactivate_object(obj_player);
 instance_create(room_width/2,room_height/2,obj_game_over)
-if !audio_is_playing(snd_game_over){
+if(!audio_is_playing(snd_game_over)){
 audio_play_sound(snd_game_over,100,false);
 }
 }
@@ -272,9 +274,9 @@ audio_play_sound(snd_game_over,100,false);
           <argument>
             <kind>1</kind>
             <string>
-if(global.leben =0 )
+if(global.leben &lt; 0 )
 {
-alarm[3] =3*room_speed ;
+room_goto(rm_menu);
 }
 </string>
           </argument>
@@ -484,7 +486,7 @@ if(jumping &amp;&amp; alarm[0] &lt; 0 &amp;&amp; doppelsprung==1) {
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>1</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
-  <PhysicsObjectFriction>0.100000001490116</PhysicsObjectFriction>
+  <PhysicsObjectFriction>0.600000023841858</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
