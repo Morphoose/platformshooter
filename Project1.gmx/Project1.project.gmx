@@ -27,6 +27,7 @@
     <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_arrow_menu</sprite>
     <sprite>sprites\spr_stacheln</sprite>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="background_new">
@@ -64,14 +65,15 @@
         <object>objects\obj_collisionstachel</object>
         <object>objects\obj_collisionrampe</object>
       </objects>
+      <object>objects\obj_heart</object>
     </objects>
     <object>objects\obj_stacheln</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_lvl_3</room>
     <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_lvl_2</room>
-    <room>rooms\rm_lvl_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
